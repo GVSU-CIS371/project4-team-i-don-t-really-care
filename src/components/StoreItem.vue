@@ -5,7 +5,7 @@
       <v-col>
         <v-card-title class="text-wrap">{{ product.data.name }}</v-card-title>
         <v-row >
-          <v-col class="d-flex flex-column align-center justify-center" style="gap: 12px;">
+          <v-col class="d-flex flex-column align-center justify-center" style="gap: 10px;">
             <v-rating 
               :model-value="product.data.rating" 
               color="amber"
@@ -21,7 +21,7 @@
 
           </v-col>
         </v-row>
-        <v-img :src="product.data.image" :alt="product.data.name" height="200px"></v-img>
+        <v-img :src="product.data.image" :alt="product.data.name" height="200px" class="ma-4"></v-img>
         
        
 
@@ -47,3 +47,8 @@ defineProps({
   },
 });
 </script>
+
+
+
+//"ma-2 pa-2"
+class="same-size-box"
