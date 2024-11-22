@@ -6,42 +6,42 @@ import GroceriesView from "./components/Groceries.vue";
 import BestSellerView from "./components/BestSeller.vue";
 
 const routes = [
-  {
-    path: "/",
-    name: "home",
-    props: true,
-    component: HomeView,
-  },
-  {
-    path: "/electronics",
-    name: "electronics",
-    component: ElectronicsView,
-  },
-  {
-    path: "/clothing",
-    name: "clothing",
-    component: ClothingView,
-  },
-  {
-    path: "/groceries", // Dynamic route for product details
-    name: "groceries",
-    props: true,
-    component: GroceriesView,
-  },
-  {
-    path: "/bestseller", // Dynamic route for product details
-    name: "bestseller",
-    props: true,
-    component: BestSellerView,
-  },
+    {
+        path: "/",
+        name: "home",
+        props: true,
+        component: HomeView,
+    },
+    {
+        path: "/electronics",
+        name: "electronics",
+        component: ElectronicsView,
+    },
+    {
+        path: "/clothing",
+        name: "clothing",
+        component: ClothingView,
+    },
+    {
+        path: "/groceries", // Dynamic route for product details
+        name: "groceries",
+        props: true,
+        component: GroceriesView,
+    },
+    {
+        path: "/bestseller", // Dynamic route for product details
+        name: "bestseller",
+        props: true,
+        component: BestSellerView,
+    },
 ];
 
 // Sort routes by name or any other specific order you prefer
 routes.sort((a, b) => a.name.localeCompare(b.name));
 
 const router = createRouter({
-  history: createWebHashHistory(),
-  routes,
+    history: createWebHashHistory(),
+    routes,
 });
 
 export default router;
